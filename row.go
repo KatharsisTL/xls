@@ -35,6 +35,11 @@ func (r *Row) Col(i int) string {
 	return ""
 }
 
+func (r *Row) GetCol(colIndex int) contentHandler {
+	serial := uint16(i)
+	return r.cols[serial]
+}
+
 //LastCol Get the number of Last Col of the Row.
 func (r *Row) LastCol() int {
 	return int(r.info.Lcell)
