@@ -36,7 +36,7 @@ func (r *Row) Col(i int) string {
 }
 
 func (r *Row) GetCol(colIndex int) contentHandler {
-	serial := uint16(i)
+	serial := uint16(colIndex)
 	return r.cols[serial]
 }
 
